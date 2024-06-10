@@ -46,7 +46,7 @@ const Intro = () => {
 				</div>
 			</div>
 
-			<motion.p
+			<motion.h1
 				initial={{ opacity: 0, y: 100 }}
 				animate={{ opacity: 1, y: 0 }}
 				className="mb-10 mt-4 px-4 text-xl font-medium leading-[1.5] sm:text-2xl"
@@ -56,7 +56,7 @@ const Intro = () => {
 				haven't worked professionally yet, I enjoy building sites & apps AND
 				I've been learning <span className="font-bold">NextJS & ExpressJS</span>
 				. Thank you for considering my profile 😊!
-			</motion.p>
+			</motion.h1>
 
 			<motion.div
 				initial={{ opacity: 0, y: 100 }}
@@ -81,10 +81,18 @@ const Intro = () => {
 					Download CV{" "}
 					<BsDownload className="opacity-60 group-hover:translate-y-1" />
 				</a>
-				<a className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-[1.1] active:scale-[1.1] transition cursor-pointer border border-black/10 hover:text-gray-950" href="https://linkedin.com" target="_blank">
+				<a
+					className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-[1.1] active:scale-[1.1] transition cursor-pointer border border-black/10 hover:text-gray-950"
+					href="https://linkedin.com"
+					target="_blank"
+				>
 					<BsLinkedin />
 				</a>
-				<a className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full text-[1.35rem] outline-none focus:scale-[1.15] hover:scale-[1.1]  hover:text-gray-950 active:scale-105 transition cursor-pointer border border-black/10" href="https://github.com/guanghui28" target="_blank">
+				<a
+					className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full text-[1.35rem] outline-none focus:scale-[1.15] hover:scale-[1.1]  hover:text-gray-950 active:scale-105 transition cursor-pointer border border-black/10"
+					href="https://github.com/guanghui28"
+					target="_blank"
+				>
 					<FaGithubSquare />
 				</a>
 			</motion.div>
