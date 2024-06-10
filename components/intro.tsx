@@ -87,7 +87,7 @@ const Intro = () => {
 					<BsArrowRight className="opacity-80 group-hover:translate-x-1" />
 				</Link>
 				<a
-					className="group bg-white flex items-center gap-2 px-7 py-3 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer border border-black/10"
+					className="group bg-white flex items-center gap-2 px-7 py-3 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack"
 					href="/CV.pdf"
 					download
 				>
@@ -95,14 +95,14 @@ const Intro = () => {
 					<BsDownload className="opacity-60 group-hover:translate-y-1" />
 				</a>
 				<a
-					className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-[1.1] active:scale-[1.1] transition cursor-pointer border border-black/10 hover:text-gray-950"
+					className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-[1.1] active:scale-[1.1] transition cursor-pointer borderBlack hover:text-gray-950"
 					href="https://linkedin.com"
 					target="_blank"
 				>
 					<BsLinkedin />
 				</a>
 				<a
-					className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full text-[1.35rem] outline-none focus:scale-[1.15] hover:scale-[1.1]  hover:text-gray-950 active:scale-105 transition cursor-pointer border border-black/10"
+					className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full text-[1.35rem] outline-none focus:scale-[1.15] hover:scale-[1.1]  hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack"
 					href="https://github.com/guanghui28"
 					target="_blank"
 				>
