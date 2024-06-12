@@ -3,7 +3,9 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { BsArrowRight, BsDownload, BsLinkedin } from "react-icons/bs";
+import { BsArrowRight, BsDownload } from "react-icons/bs";
+import { FaInstagramSquare } from "react-icons/fa";
+
 import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
@@ -61,10 +63,10 @@ const Intro = () => {
 				className="mb-10 mt-4 px-4 text-xl font-medium leading-[1.5] sm:text-2xl"
 			>
 				Hello! I'm <span className="font-bold">GuangHui</span>, an aspiring{" "}
-				<span className="font-bold">full-stack developer</span>. Though I
-				haven't worked professionally yet, I enjoy building sites & apps AND
-				I've been learning <span className="font-bold">NextJS & ExpressJS</span>
-				. Thank you for considering my profile 😊!
+				<span className="font-bold">full-stack developer</span>. I enjoy
+				building sites & apps AND I've been learning{" "}
+				<span className="font-bold">NextJS & ReactJs</span>. Thank you for
+				considering my profile 😊!
 			</motion.h1>
 
 			<motion.div
@@ -87,7 +89,7 @@ const Intro = () => {
 					<BsArrowRight className="opacity-80 group-hover:translate-x-1" />
 				</Link>
 				<a
-					className="group bg-white flex items-center gap-2 px-7 py-3 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/40 dark:text-white/60"
+					className="group bg-white flex items-center gap-2 px-7 py-3 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/50 dark:text-white/70"
 					href="/CV.pdf"
 					download
 				>
@@ -95,14 +97,14 @@ const Intro = () => {
 					<BsDownload className="opacity-60 group-hover:translate-y-1" />
 				</a>
 				<a
-					className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-[1.1] active:scale-[1.1] transition cursor-pointer borderBlack hover:text-gray-950 dark:bg-white/40 dark:text-white/60"
-					href="https://linkedin.com"
+					className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-[1.1] active:scale-[1.1] transition cursor-pointer borderBlack hover:text-gray-950 dark:bg-white/50 dark:text-white/70"
+					href="https://www.instagram.com/guanghuijs"
 					target="_blank"
 				>
-					<BsLinkedin />
+					<FaInstagramSquare />
 				</a>
 				<a
-					className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full text-[1.35rem] outline-none focus:scale-[1.15] hover:scale-[1.1]  hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/40 dark:text-white/60"
+					className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full text-[1.35rem] outline-none focus:scale-[1.15] hover:scale-[1.1]  hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/50 dark:text-white/70"
 					href="https://github.com/guanghui28"
 					target="_blank"
 				>

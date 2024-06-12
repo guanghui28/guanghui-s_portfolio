@@ -1,10 +1,10 @@
 import React from "react";
-import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import { FaComputer } from "react-icons/fa6";
+import bookshelfImg from "@/public/bookshelf.png";
+import threadAppImg from "@/public/thread-app.png";
+import transactionImg from "@/public/transaction.png";
 
 export const links = [
 	{
@@ -35,52 +35,52 @@ export const links = [
 
 export const experiencesData = [
 	{
-		title: "Graduated bootcamp",
-		location: "Miami, FL",
+		title: "Learn Programming Skill",
+		location: "UIT University, HCM",
 		description:
-			"I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
-		icon: React.createElement(LuGraduationCap),
-		date: "2019",
+			"At university, I learned C++, Python & some concept about Machine Learning, which sparked my interest in programming. This foundation led me to explore web development,",
+		icon: React.createElement(FaComputer),
+		date: "2020",
 	},
 	{
-		title: "Front-End Developer",
-		location: "Orlando, FL",
+		title: "Learn ReactJs",
+		location: "Self Taught",
 		description:
-			"I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
-		icon: React.createElement(CgWorkAlt),
-		date: "2019 - 2021",
-	},
-	{
-		title: "Full-Stack Developer",
-		location: "Houston, TX",
-		description:
-			"I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+			"I'm a self-taught web developer with a passion for React and web development. My journey involves mastering modern web technologies to create dynamic, user-friendly applications. Constantly learning and adapting, I aim to build innovative solutions and contribute to the ever-evolving digital landscape.",
 		icon: React.createElement(FaReact),
 		date: "2021 - present",
+	},
+	{
+		title: "Graduate UIT University (coming soon...)",
+		location: "HCM, VietNam",
+		description:
+			"I am about to graduate after four years of studying. Thanks to my university, I have cherished this time immensely, discovering my passion for programming and web development.",
+		icon: React.createElement(LuGraduationCap),
+		date: "2024",
 	},
 ] as const;
 
 export const projectsData = [
 	{
-		title: "CorpComment",
+		title: "Transaction App",
 		description:
-			"I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-		tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-		imageUrl: corpcommentImg,
+			"This app that help people tracking the money they spend & investment or saving",
+		tags: ["React", "ExpressJs", "GraphQL", "MongoDB", "CharkaUI"],
+		imageUrl: transactionImg,
 	},
 	{
-		title: "rmtDev",
+		title: "My Bookshelf",
 		description:
-			"Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-		tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-		imageUrl: rmtdevImg,
+			"Build a website to reviews book, and searching the author that like goodreads",
+		tags: ["React", "ReactQuery", "Supabase", "Styled Components"],
+		imageUrl: bookshelfImg,
 	},
 	{
-		title: "Word Analytics",
+		title: "Thread App",
 		description:
-			"A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-		tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-		imageUrl: wordanalyticsImg,
+			"This is the biggest project I have made, build a small social media based on Thread App",
+		tags: ["React", "MongoDB", "Tailwind", "Zustand", "ExpressJs"],
+		imageUrl: threadAppImg,
 	},
 ] as const;
 
@@ -94,14 +94,14 @@ export const skillsData = [
 	"Node.js",
 	"Git",
 	"Tailwind",
-	"Prisma",
 	"MongoDB",
 	"Redux",
+	"ReactQuery",
+	"Zustand",
 	"GraphQL",
 	"Apollo",
 	"Express",
 	"PostgreSQL",
 	"Python",
-	"Django",
 	"Framer Motion",
 ] as const;
