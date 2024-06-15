@@ -62,7 +62,7 @@ const Intro = () => {
 				animate={{ opacity: 1, y: 0 }}
 				className="mb-10 mt-4 px-4 text-xl font-medium leading-[1.5] sm:text-2xl text-opacity-90"
 			>
-				Hello! I'm <span className="font-bold">GuangHui</span>, an aspiring{" "}
+				Hello! I'm <span className="font-bold">GuangHui</span>, an enthusiastic{" "}
 				<span className="font-bold">full-stack developer</span>. I enjoy
 				building sites & apps AND I've been learning{" "}
 				<span className="font-bold">NextJS & ReactJs</span>. Thank you for

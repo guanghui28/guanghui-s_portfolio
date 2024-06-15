@@ -28,8 +28,8 @@ const About = () => {
 				<span className="font-bold">modern web technologies</span> and honed my
 				skills in both <span className="font-bold">front-end</span> and{" "}
 				<span className="font-bold">back-end</span> development. Although I
-				haven't started my professional career yet, I am eager to prove myself
-				and am seeking an opportunity to showcase my abilities. I believe my
+				haven't started my professional career yet,I am eager to prove myself,
+				seeking an opportunity to showcase my abilities. I believe my
 				determination and passion make me a valuable asset, and I am ready to
 				contribute to innovative projects and grow within the tech industry.
 			</p>
