@@ -6,9 +6,24 @@ import { motion } from "framer-motion";
 import { sendEmail } from "@/actions/sendEmail";
 import SubmitButton from "./submit-button";
 import toast from "react-hot-toast";
+import { useRef } from "react";
 
 const Contact = () => {
 	const { ref } = useSectionInView("Contact", 0.5);
+	const formRef = useRef<HTMLFormElement | null>(null);
+
+	const sendFormContact = async (formData: FormData) => {
+		const { data, error } = await sendEmail(formData);
+
+		if (error) {
+			return toast.error(error);
+		}
+
+		if (!formRef.current) return;
+
+		formRef.current.reset();
+		toast.success("Email sent successfully!");
+	};
 
 	return (
 		<motion.section
@@ -36,16 +51,9 @@ const Contact = () => {
 				or through this form.
 			</p>
 			<form
+				ref={formRef}
 				className="mt-10 flex flex-col dark:text-black"
-				action={async (formData) => {
-					const { data, error } = await sendEmail(formData);
-
-					if (error) {
-						return toast.error(error);
-					}
-
-					toast.success("Email sent successfully!");
-				}}
+				action={sendFormContact}
 			>
 				<input
 					type="email"
