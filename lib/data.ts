@@ -5,6 +5,7 @@ import { FaComputer } from "react-icons/fa6";
 import bookshelfImg from "@/public/bookshelf.png";
 import threadAppImg from "@/public/thread-app.png";
 import transactionImg from "@/public/transaction.png";
+import blogAppImg from "@/public/blog-app.png";
 
 export const links = [
 	{
@@ -78,9 +79,16 @@ export const projectsData = [
 	{
 		title: "Thread App",
 		description:
-			"This is the biggest project I have made, build a small social media based on Thread App",
-		tags: ["React", "MongoDB", "Tailwind", "Zustand", "ExpressJs"],
+			"Build a small social media based on Thread App (Light/Dark mode, Authenticate, Upload Image, CRUD post,...)",
+		tags: ["React", "MongoDB", "Tailwind", "Charka UI", "Recoil", "ExpressJs"],
 		imageUrl: threadAppImg,
+	},
+	{
+		title: "Personal Blog",
+		description:
+			"Build for my own a Blog page, improve a whole functionalities (Ligh/Dark mode, Authenticate, Authorization, Dashboard Admin, CRUD,...)",
+		tags: ["React", "MongoDB", "Tailwind", "FlowBite", "Redux", "ExpressJs"],
+		imageUrl: blogAppImg,
 	},
 ] as const;
 
