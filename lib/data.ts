@@ -1,6 +1,6 @@
 import React from "react";
 import { FaReact } from "react-icons/fa";
-import { LuGraduationCap } from "react-icons/lu";
+import { LuGamepad2, LuGraduationCap } from "react-icons/lu";
 import { FaComputer } from "react-icons/fa6";
 import bookshelfImg from "@/public/bookshelf.png";
 import threadAppImg from "@/public/thread-app.png";
@@ -58,6 +58,14 @@ export const experiencesData = [
 			"I am about to graduate after four years of studying. Thanks to my university, I have cherished this time immensely, discovering my passion for programming and web development.",
 		icon: React.createElement(LuGraduationCap),
 		date: "2024",
+	},
+	{
+		title: "Nexon Dev Vina - HTML5 Game Developer",
+		location: "HCM, VietNam",
+		description:
+			"Worked in the web-based gaming industry, with a strong focus on front-end development. I was responsible for building engaging browser-based games using modern library JavaScript (REACTJS), HTML5 Canvas API, and CSS. My role involved designing and implementing smooth, responsive user interfaces, optimizing rendering performance, and ensuring cross-browser compatibility. I paid close attention to visual polish and UX details — from pixel-perfect layouts to intuitive game controls — while maintaining clean, modular, and maintainable code.",
+		icon: React.createElement(LuGamepad2),
+		date: "9/2024 - 7/2025",
 	},
 ] as const;
 
