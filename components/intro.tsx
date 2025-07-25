@@ -10,7 +10,7 @@ import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
 import MainCTAText from "@/components/MainCTAText";
 import SubCTAText from "@/components/SubCTAText";
-import myImage from "@/public/my-image.jpg";
+import { myImage } from "@/lib/data";
 
 const Intro = () => {
 	const { ref } = useSectionInView("Home", 0.5);

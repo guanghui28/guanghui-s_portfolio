@@ -6,6 +6,9 @@ import bookshelfImg from "@/public/projects/blog-app.png";
 import threadAppImg from "@/public/projects/thread-app.png";
 import transactionImg from "@/public/projects/transaction.png";
 import blogAppImg from "@/public/projects/blog-app.png";
+import heroImage from "@/public/my-image.jpg";
+
+export const myImage = heroImage;
 
 export const links = [
 	{
