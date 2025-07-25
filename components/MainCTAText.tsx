@@ -2,7 +2,7 @@ type CTAProps = {
 	children: React.ReactNode;
 };
 
-export const MainCTAText = ({ children }: CTAProps) => (
+const MainCTAText = ({ children }: CTAProps) => (
 	<h2>
 		<span
 			className="text-2xl sm:text-4xl inline-block uppercase font-extrabold tracking-wide
@@ -16,3 +16,5 @@ export const MainCTAText = ({ children }: CTAProps) => (
 		</span>
 	</h2>
 );
+
+export default MainCTAText;
