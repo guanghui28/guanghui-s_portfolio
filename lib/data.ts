@@ -36,8 +36,8 @@ export const links = [
 
 export const experiencesData = [
 	{
-		title: "Learn Programming Skill",
-		location: "UIT University, HCM",
+		title: "Bachelor's Computer Science",
+		location: "University of Information Technology, HCM",
 		description:
 			"At university, I learned C++, Python & some concept about Machine Learning, which sparked my interest in programming. This foundation led me to explore web development,",
 		icon: React.createElement(FaComputer),
@@ -49,7 +49,7 @@ export const experiencesData = [
 	},
 	{
 		title: "Pursuit Web Development",
-		location: "Self Taught",
+		location: "HCM, Vietnam",
 		description:
 			"I'm a self-taught web developer with a passion for React and web development. My journey involves mastering modern web technologies to create dynamic, user-friendly applications. Constantly learning and adapting, I aim to build innovative solutions and contribute to the ever-evolving digital landscape.",
 		icon: React.createElement(FaReact),
@@ -128,15 +128,17 @@ export const skillsData = [
 	{ name: "AngularJS", image: "tech-stack/angular-original.svg" },
 	{ name: "VueJs", image: "tech-stack/vuejs-original.svg" },
 	{ name: "NuxtJS", image: "tech-stack/nuxtjs-original.svg" },
-	{ name: "Git", image: "tech-stack/git-original.svg" },
+	{ name: "Vite", image: "tech-stack/vitejs-original.svg" },
 	{ name: "TailwindCSS", image: "tech-stack/tailwindcss-original.svg" },
-	{ name: "Redux", image: "tech-stack/redux-original.svg" },
-	{ name: "Zustand", image: "tech-stack/zustand-original.svg" },
-	{ name: "GraphQL", image: "tech-stack/graphql-original.svg" },
-	{ name: "React Router", image: "tech-stack/reactrouter-original.svg" },
 	{ name: "Express", image: "tech-stack/express-original.svg" },
 	{ name: "MongoDB", image: "tech-stack/mongodb-original.svg" },
 	{ name: "PostgreSQL", image: "tech-stack/postgresql-original.svg" },
+	{ name: "Redux", image: "tech-stack/redux-original.svg" },
+	{ name: "Zustand", image: "tech-stack/zustand-original.svg" },
+	{ name: "React Router", image: "tech-stack/reactrouter-original.svg" },
 	{ name: "Framer Motion", image: "tech-stack/framermotion-original.svg" },
+	{ name: "GraphQL", image: "tech-stack/graphql-original.svg" },
 	{ name: "Prisma", image: "tech-stack/prisma-original.svg" },
+	{ name: "Git", image: "tech-stack/git-original.svg" },
+	{ name: "Docker", image: "tech-stack/docker-original.svg" },
 ] as const;

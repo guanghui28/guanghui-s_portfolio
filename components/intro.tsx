@@ -72,8 +72,8 @@ const Intro = () => {
 				<h3>
 					<SubCTAText>Software Engineer</SubCTAText>
 				</h3>
-				<p className="italic text-sm sm:text-lg">
-					enjoys creating responsive, user-friendly websites and applications.
+				<p className="italic text-sm sm:text-lg opacity-80">
+					Enjoys creating responsive, user-friendly websites and applications.
 				</p>
 			</motion.div>
 
