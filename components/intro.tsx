@@ -10,7 +10,6 @@ import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
 import MainCTAText from "@/components/MainCTAText";
 import SubCTAText from "@/components/SubCTAText";
-import { myImage } from "@/lib/data";
 
 const Intro = () => {
 	const { ref } = useSectionInView("Home", 0.5);
@@ -33,7 +32,7 @@ const Intro = () => {
 						}}
 					>
 						<Image
-							src={myImage}
+							src="/my-image.jpg"
 							alt="Personal image"
 							height={800}
 							width={800}
