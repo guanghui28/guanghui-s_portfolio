@@ -1,7 +1,7 @@
 "use client";
 
 import { skillsData } from "@/lib/data";
-import SectionHeading from "./section-heading";
+import SectionHeading from "../ui/section-heading";
 import { useSectionInView } from "@/lib/hooks";
 import { motion } from "framer-motion";
 import Image from "next/image";
@@ -21,15 +21,15 @@ const fadeInAnimationVariants = {
 };
 
 const Skills = () => {
-	const { ref } = useSectionInView("Skills", 0.5);
+	const { ref } = useSectionInView("Skills", 0.2);
 
 	return (
 		<section
 			id="skills"
 			ref={ref}
-			className="mb-28 max-w-[42rem] scroll-mt-28 text-center sm:mb-40"
+			className="px-3 max-w-[42rem] scroll-mt-28 text-center"
 		>
-			<SectionHeading>My Technical Skills</SectionHeading>
+			<SectionHeading>My Skills</SectionHeading>
 			<ul className="flex flex-wrap justify-center gap-2 text-lg text-gray-800">
 				{skillsData.map((skill, index) => (
 					<motion.li
@@ -37,10 +37,11 @@ const Skills = () => {
 						key={skill.name}
 						variants={fadeInAnimationVariants}
 						initial="initial"
-						animate="animate"
+						// animate="animate"
 						whileInView="animate"
 						viewport={{
 							once: true,
+							amount: 0.2,
 						}}
 						custom={index}
 					>

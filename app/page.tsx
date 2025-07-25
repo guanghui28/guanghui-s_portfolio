@@ -1,18 +1,21 @@
-import About from "@/components/about";
-import Contact from "@/components/contact";
-import Experience from "@/components/experience";
-import Intro from "@/components/intro";
-import Projects from "@/components/projects";
-import SectionDivider from "@/components/section-divider";
-import Skills from "@/components/skills";
+import About from "@/components/sections/about";
+import Contact from "@/components/sections/contact";
+import Experience from "@/components/sections/experience";
+import Intro from "@/components/sections/intro";
+import Projects from "@/components/sections/projects";
+import SectionDivider from "@/components/ui/section-divider";
+import Skills from "@/components/sections/skills";
 
 const Page = () => {
 	return (
-		<main className="flex flex-col items-center px-4">
+		<main className="flex flex-col items-center space-y-28 lg:space-y-40">
 			<Intro />
+			<SectionDivider />
 			<About />
 			<Projects />
+			<SectionDivider />
 			<Skills />
+			<SectionDivider />
 			<Experience />
 			<Contact />
 		</main>

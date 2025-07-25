@@ -8,9 +8,11 @@ type ChildrenProps = {
 
 type ActiveSectionContextType = {
 	activeSection: SectionName;
-	setActiveSection: React.Dispatch<React.SetStateAction<SectionName>>;
 	timeOfLastClick: number;
-	setTimeOfLastClick: React.Dispatch<React.SetStateAction<number>>;
+	updateActiveSectionWithTime: (
+		sectionName: SectionName,
+		isResetTime?: boolean
+	) => void;
 };
 
 const ActiveSectionContext = createContext<ActiveSectionContextType | null>(
@@ -21,13 +23,20 @@ const ActiveSectionContextProvider = ({ children }: ChildrenProps) => {
 	const [activeSection, setActiveSection] = useState<SectionName>("Home");
 	const [timeOfLastClick, setTimeOfLastClick] = useState(0);
 
+	const updateActiveSectionWithTime = (
+		sectionName: SectionName,
+		isResetTime: boolean = false
+	) => {
+		setActiveSection(sectionName);
+		if (isResetTime) setTimeOfLastClick(Date.now());
+	};
+
 	return (
 		<ActiveSectionContext.Provider
 			value={{
 				activeSection,
-				setActiveSection,
 				timeOfLastClick,
-				setTimeOfLastClick,
+				updateActiveSectionWithTime,
 			}}
 		>
 			{children}

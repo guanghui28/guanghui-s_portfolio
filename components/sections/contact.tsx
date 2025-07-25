@@ -1,12 +1,13 @@
 "use client";
 
-import SectionHeading from "./section-heading";
+import SectionHeading from "../ui/section-heading";
 import { useSectionInView } from "@/lib/hooks";
 import { motion } from "framer-motion";
 import { sendEmail } from "@/actions/sendEmail";
-import SubmitButton from "./submit-button";
+import SubmitButton from "../submit-button";
 import toast from "react-hot-toast";
 import { useRef } from "react";
+import TernaryText from "../ui/TernaryText";
 
 const Contact = () => {
 	const { ref } = useSectionInView("Contact", 0.5);
@@ -29,7 +30,7 @@ const Contact = () => {
 		<motion.section
 			id="contact"
 			ref={ref}
-			className="mb-28 sm:mb-40 scroll-mt-28 w-[min(100%,38rem)] text-center"
+			className="px-3 scroll-mt-28 w-[min(100%,38rem)] text-center"
 			initial={{ opacity: 0 }}
 			animate={{ opacity: 1 }}
 			whileInView={{
@@ -43,10 +44,12 @@ const Contact = () => {
 			}}
 		>
 			<SectionHeading>Contact Me</SectionHeading>
-			<p className="text-gray-700 -mt-6 dark:text-white/70">
+			<p className="text-sm text-balance sm:text-base text-gray-700 dark:text-white/70">
 				Please contact me directly at{" "}
 				<a href="mailto:phamquanghuy2809@gmail.com" className="font-bold">
-					phamquanghuy2809@gmail.com
+					<TernaryText className="px-0.5">
+						phamquanghuy2809@gmail.com
+					</TernaryText>
 				</a>{" "}
 				or through this form.
 			</p>

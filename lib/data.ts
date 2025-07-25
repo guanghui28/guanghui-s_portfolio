@@ -39,7 +39,7 @@ export const experiencesData = [
 		title: "Bachelor's Computer Science",
 		location: "UIT (VNU - HCM)",
 		description:
-			"At university, I learned C++, Python & some concept about Machine Learning, which sparked my interest in programming. This foundation led me to explore web development,",
+			"At university, I learned C++, Python & some concept about Machine Learning, which sparked my interest in programming. This foundation led me to explore web development.",
 		icon: React.createElement(FaComputer),
 		date: "2020",
 		iconTheme: {

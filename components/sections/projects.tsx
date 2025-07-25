@@ -1,14 +1,14 @@
 "use client";
-import SectionHeading from "./section-heading";
+import SectionHeading from "../ui/section-heading";
 import { projectsData } from "@/lib/data";
-import Project from "./project";
+import Project from "../project";
 import React from "react";
 import { useSectionInView } from "@/lib/hooks";
 
 const Projects = () => {
-	const { ref } = useSectionInView("Projects", 0.5);
+	const { ref } = useSectionInView("Projects", 0.25);
 	return (
-		<section ref={ref} className="scroll-mt-28 mb-28" id="projects">
+		<section ref={ref} className="px-3 scroll-mt-28" id="projects">
 			<SectionHeading>My Projects</SectionHeading>
 			<div className="">
 				{projectsData.map((project, index) => (
