@@ -21,7 +21,7 @@ const Intro = () => {
 	return (
 		<section
 			ref={ref}
-			className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-28"
+			className="mb-28 max-w-[50rem] text-center sm:mb-40 scroll-mt-28"
 			id="home"
 		>
 			<div className="flex items-center justify-center">
@@ -66,14 +66,14 @@ const Intro = () => {
 				animate={{ opacity: 1, y: 0 }}
 				className="mb-10 mt-4 px-4 text-xl font-medium leading-relaxed sm:text-2xl text-opacity-90 dark:text-white/80 space-y-4"
 			>
-				<h1>
-					<MainCTAText>Pham Quang Huy</MainCTAText>
-				</h1>
-				<h3>
-					<SubCTAText>Software Engineer</SubCTAText>
-				</h3>
-				<p className="italic text-sm sm:text-lg opacity-80">
-					Enjoys creating responsive, user-friendly websites and applications.
+				<MainCTAText>Pham Quang Huy</MainCTAText>
+				<SubCTAText>Software Engineer</SubCTAText>
+				<p
+					className="italic text-sm lg:text-lg text-transparent bg-clip-text 
+             bg-gradient-to-r from-pink-500 via-rose-500 to-red-500 
+ dark:from-red-400 dark:via-rose-500 dark:to-pink-600"
+				>
+					"Enjoys creating responsive, user-friendly websites and applications"
 				</p>
 			</motion.div>
 
