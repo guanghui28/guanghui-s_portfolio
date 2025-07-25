@@ -41,7 +41,9 @@ const Experience = () => {
 							icon={item.icon}
 							iconStyle={{
 								background:
-									theme === "light" ? "white" : "rgba(255,255,255,0.15)",
+									theme === "light"
+										? `${item.iconTheme.light}`
+										: `${item.iconTheme.dark}`,
 								fontSize: "1.5rem",
 							}}
 						>
