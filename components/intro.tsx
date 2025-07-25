@@ -11,6 +11,8 @@ import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
 
 import myImage from "@/public/my-image.jpg";
+import { MainCTAText } from "./MainCTAText";
+import { SubCTAText } from "./SubCTAText";
 
 const Intro = () => {
 	const { ref } = useSectionInView("Home", 0.5);
@@ -39,7 +41,7 @@ const Intro = () => {
 							width={800}
 							quality={95}
 							priority={true}
-							className="w-24 h-24 object-cover rounded-full border-[0.35rem] border-white shadow-xl"
+							className="w-24 h-24 object-cover rounded-full border-[0.35rem] border-white/50 dark:border-white/80 shadow-xl"
 						/>
 					</motion.div>
 
@@ -59,17 +61,21 @@ const Intro = () => {
 				</div>
 			</div>
 
-			<motion.h1
+			<motion.div
 				initial={{ opacity: 0, y: 100 }}
 				animate={{ opacity: 1, y: 0 }}
-				className="mb-10 mt-4 px-4 text-xl font-medium leading-[1.5] sm:text-2xl text-opacity-90"
+				className="mb-10 mt-4 px-4 text-xl font-medium leading-relaxed sm:text-2xl text-opacity-90 dark:text-white/80 space-y-4"
 			>
-				Hello! I'm <span className="font-bold">GuangHui</span>, an enthusiastic{" "}
-				<span className="font-bold">full-stack developer</span>. I enjoy
-				building sites & apps AND I've been learning{" "}
-				<span className="font-bold">NextJS & ReactJs</span>. Thank you for
-				considering my profile 😊!
-			</motion.h1>
+				<h1>
+					<MainCTAText>Pham Quang Huy</MainCTAText>
+				</h1>
+				<h3>
+					<SubCTAText>Software Engineer</SubCTAText>
+				</h3>
+				<p className="italic text-sm sm:text-lg">
+					enjoys creating responsive, user-friendly websites and applications.
+				</p>
+			</motion.div>
 
 			<motion.div
 				initial={{ opacity: 0, y: 100 }}
