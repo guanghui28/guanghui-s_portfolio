@@ -43,20 +43,20 @@ export const experiencesData = [
 		icon: React.createElement(FaComputer),
 		date: "2020",
 		iconTheme: {
-			light: "#FF69B4", // Hot Pink
-			dark: "#C05085", // Darker Pink
+			light: "oklch(64.5% 0.246 16.439)", // Hot Pink
+			dark: "oklch(45.9% 0.187 3.815)", // Darker Pink
 		},
 	},
 	{
-		title: "Learn ReactJs",
+		title: "Pursuit Web Development",
 		location: "Self Taught",
 		description:
 			"I'm a self-taught web developer with a passion for React and web development. My journey involves mastering modern web technologies to create dynamic, user-friendly applications. Constantly learning and adapting, I aim to build innovative solutions and contribute to the ever-evolving digital landscape.",
 		icon: React.createElement(FaReact),
 		date: "2021 - present",
 		iconTheme: {
-			light: "#FFD700", // Gold
-			dark: "#C5A300", // Darker Yellow
+			light: "oklch(87.9% 0.169 91.605)", // Gold
+			dark: "oklch(47.3% 0.137 46.201)", // Darker Yellow
 		},
 	},
 	{
@@ -65,10 +65,10 @@ export const experiencesData = [
 		description:
 			"I am about to graduate after four years of studying. Thanks to my university, I have cherished this time immensely, discovering my passion for programming and web development.",
 		icon: React.createElement(LuGraduationCap),
-		date: "2024",
+		date: "10/2020 - 11/2024",
 		iconTheme: {
-			light: "#87CEEB", // Light Sky Blue
-			dark: "#469ACD", // Darker Sky Blue
+			light: "oklch(86.5% 0.127 207.078)", // Light Sky Blue
+			dark: "oklch(45% 0.085 224.283)", // Darker Sky Blue
 		},
 	},
 	{
@@ -79,8 +79,8 @@ export const experiencesData = [
 		icon: React.createElement(LuGamepad2),
 		date: "9/2024 - 7/2025",
 		iconTheme: {
-			light: "#32CD32", // Lime Green
-			dark: "#228B22", // Forest Green
+			light: "oklch(87.1% 0.15 154.449)", // Lime Green
+			dark: "oklch(44.8% 0.119 151.328)", // Forest Green
 		},
 	},
 ] as const;
