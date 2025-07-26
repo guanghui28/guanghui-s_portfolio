@@ -10,7 +10,7 @@ import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
 import MainCTAText from "@/components/ui/MainCTAText";
 import SubCTAText from "@/components/ui/SubCTAText";
-import heroImg from "@/assets/my-image.jpg";
+import heroImg from "@/assets/hero-img.png";
 import TernaryText from "../ui/TernaryText";
 
 const Intro = () => {
@@ -35,8 +35,8 @@ const Intro = () => {
 					<Image
 						src={heroImg}
 						alt="Personal image"
-						height={800}
-						width={800}
+						height={1038}
+						width={1038}
 						quality={95}
 						priority={true}
 						className="size-32 lg:size-48 object-cover rounded-full border-[0.35rem] border-white/50 dark:border-white/80 shadow-xl"
